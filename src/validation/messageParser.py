@@ -357,9 +357,9 @@ class ParsingConstants226(ParsingConstants):
 
 
 # noinspection PyDictCreation
-class ParsingConstants263(ParsingConstants226):
+class ParsingConstants268(ParsingConstants226):
     """
-    Compatibility for tshark 2.6.3
+    Compatibility for tshark 2.6.8
 
     "_raw" field node values list
     # h - hex bytes
@@ -369,7 +369,7 @@ class ParsingConstants263(ParsingConstants226):
     # t - type
     see line 262ff: https://github.com/wireshark/wireshark/blob/3a514caaf1e3b36eb284c3a566d489aba6df5392/tools/json2pcap/json2pcap.py
     """
-    COMPATIBLE_TO = b'2.6.3'
+    COMPATIBLE_TO = b'2.6.8'
 
     pass
 
@@ -1164,7 +1164,7 @@ class ParsedMessage(object):
     def __getCompatibleConstants():
         if ParsedMessage.__tshark.version <= ParsingConstants226.COMPATIBLE_TO:
             return ParsingConstants226
-        elif ParsedMessage.__tshark.version <= ParsingConstants263.COMPATIBLE_TO:
-            return ParsingConstants263
+        elif ParsedMessage.__tshark.version <= ParsingConstants268.COMPATIBLE_TO:
+            return ParsingConstants268
         else:
             raise Exception('Unknown tshark version {}'.format(ParsedMessage.__tshark.version))
