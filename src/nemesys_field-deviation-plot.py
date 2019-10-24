@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Infer messages from PCAPs by the NEMESYS approach (BCDG-segmentation)
 and plot the amount deviating boundaries to a histogram.

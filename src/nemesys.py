@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Infer messages from PCAPs by the NEMESYS approach (BCDG-segmentation)
 and write inference result to the terminal. Finally drop to an IPython console

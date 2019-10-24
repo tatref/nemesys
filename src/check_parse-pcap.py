@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Parse a PCAP file and print its dissection.
 This script primarily is intended to check whether the dissection of a specific PCAP works and all fields can be

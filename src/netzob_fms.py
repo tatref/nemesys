@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 """
 Infer PCAP with Netzob and compare the result to the tshark dissector of the protocol:
 
