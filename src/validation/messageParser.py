@@ -1167,4 +1167,4 @@ class ParsedMessage(object):
         elif ParsedMessage.__tshark.version <= ParsingConstants263.COMPATIBLE_TO:
             return ParsingConstants263
         else:
-            raise ParsingConstants
+            raise Exception('Unknown tshark version {}'.format(ParsedMessage.__tshark.version))
